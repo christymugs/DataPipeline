@@ -8,8 +8,7 @@ The Sales Data ETL Pipeline is designed to extract, transform, and load sales da
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Data Sources](#data-sources)
-- [License](#license)
+- [Data Source](#data-source)
 
 ## Technologies Used
 - **Python**: Core programming language for the ETL process.
@@ -29,5 +28,32 @@ To run the Sales Data ETL Pipeline locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/sales-data-etl-pipeline.git
-   cd sales-data-etl-pipeline
+   git clone https://github.com/christymugs/datapipeline.git
+   cd datapipeline
+2. **Set up a virtual Environment**
+      ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+3. **Install Dependencies**
+     ```bash
+   pip install pandas apache-airflow psycopg2-binary
+
+
+## Usage
+To run the ETL pipeline, execute the following scripts in order:
+
+1. **Extract Data**:
+   ```bash
+   python extract_from_csv.py
+   
+2. **Transform Data**
+      ```bash
+   python transform_data.py
+
+3. **Load Data: Make sure the transformation script handles loading into PostgreSQL**
+
+## Data Source
+The sales data is sourced from sales_data.csv on Kaggle. Ensure this file is placed in the project directory for successful extraction.
+
+<img width="505" alt="Screenshot 2024-10-09 at 2 31 07 AM" src="https://github.com/user-attachments/assets/ecb154a6-c663-4dbb-b239-fff45c995c88">
+
