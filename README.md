@@ -54,6 +54,7 @@ To run the ETL pipeline, execute the following scripts in order:
 
 ## Data Source
 The sales data is sourced from sales_data.csv on Kaggle. Ensure this file is placed in the project directory for successful extraction.
+   https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data
 
 <img width="505" alt="Screenshot 2024-10-09 at 2 31 07 AM" src="https://github.com/user-attachments/assets/ecb154a6-c663-4dbb-b239-fff45c995c88">
 
